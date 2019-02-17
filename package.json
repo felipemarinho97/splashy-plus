@@ -1,0 +1,58 @@
+{
+  "name": "splashy-plus",
+  "productName": "Splashy++",
+  "version": "2.1.0",
+  "description": "Unsplash photos as desktop wallpapers",
+  "main": "src/es6-init.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint src --color"
+  },
+  "keywords": [],
+  "author": "bumTomica <hug@splashy.art>, FelipeMarinho97 <felipevm97@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "splashy-plus"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "FelipeMarinho97",
+        "name": "http://github.com/FelipeMarinho97/splashy-plus"
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "splashy-plus"
+      }
+    }
+  },
+  "dependencies": {
+    "auto-launch-patched": "^5.0.2",
+    "cjs": "0.0.11",
+    "del": "^3.0.0",
+    "electron-compile": "^6.4.4",
+    "electron-pug": "^2.0.0",
+    "electron-settings": "^3.1.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "is-retina": "^1.0.3",
+    "open": "^0.0.5",
+    "request": "^2.81.0",
+    "universal-analytics": "^0.4.13",
+    "wallpaper": "^2.4.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt-compile": "4.0.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.4"
+  }
+}

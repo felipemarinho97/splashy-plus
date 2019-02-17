@@ -1,0 +1,22 @@
+#options
+	.container
+		.options__copyright
+			a(href='https://splashy.art', target='_blank') Splashy
+		.options__block
+			p.options__title Change wallpaper every
+			input#change(type='range', min='1', max='11', value='6')
+			p.options__subtitle
+				span#options__change
+				span#options__change_unit
+		.options__block
+			p.options__title From category (choose)
+			input#category(type='range', min='1', max='9', value='1')
+			p.options__subtitle
+				span#options__category
+			input#custom(type='text')
+
+		.options__block
+			p.options__title Autostart on login
+			input#login(type='range', min='1', max='2', value='2')
+			p.options__subtitle
+				span#options__login

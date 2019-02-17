@@ -3,7 +3,7 @@
   "productName": "Splashy++",
   "version": "2.1.0",
   "description": "Unsplash photos as desktop wallpapers",
-  "main": "src/es6-init.js",
+  "main": "./src/main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -16,20 +16,24 @@
   "license": "MIT",
   "config": {
     "forge": {
+      "make_targets": {
+        "linux": ["zip"]
+      },
       "electronPackagerConfig": {
+        "name": "Splashy++",
+        "asar": false,
+        "executableName": "Splashy++",
         "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
         "name": "splashy-plus"
       },
-      "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
       "github_repository": {
         "owner": "FelipeMarinho97",
         "name": "http://github.com/FelipeMarinho97/splashy-plus"
       },
       "windowsStoreConfig": {
-        "packageName": "",
+        "packageName": "Splashy++",
         "name": "splashy-plus"
       }
     }
@@ -49,7 +53,7 @@
     "wallpaper": "^2.4.0"
   },
   "devDependencies": {
-    "electron-prebuilt-compile": "4.0.0",
+    "electron-prebuilt-compile": "3.0.13",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
